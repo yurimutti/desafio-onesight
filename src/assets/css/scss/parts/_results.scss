@@ -1,0 +1,107 @@
+//----------------------
+// RESULTS
+
+.results-filter {
+    flex-basis: 20%;
+    background: $gray-02;
+    padding: 1.6rem;
+    height: 300px;
+    overflow-y: scroll;
+    transition: $transition-default;
+    &::-webkit-scrollbar {
+        width: 1em;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 1px rgba($black, 0.4);
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $gray-01;
+        outline: 1px solid $gray-02;
+    }
+
+    .results-filter-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.6rem;
+    }
+    input[type='checkbox'] {
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        width: 24px;
+        height: 24px;
+        border: $border-default;
+        background-color: $gray-02;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        transition: $transition-default;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 14px;
+            height: 12px;
+            background: url(../../../../../dist/assets/img/check-icon.png)
+                center no-repeat;
+            background-size: cover;
+            margin-left: 2px;
+            display: none;
+        }
+
+        &:hover {
+            background-color: darken($gray-01, 10%);
+        }
+
+        &:checked {
+            &::after {
+                display: block;
+            }
+        }
+    }
+
+    @include lg {
+        width: 300px;
+        position: absolute;
+        top: 31px;
+        left: 0;
+        transform: translateX(-300px);
+    }
+
+    &.opened {
+        transform: translateX(0);
+    }
+}
+
+.results-container {
+    flex-basis: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.4rem;
+
+    @include lg {
+        justify-content: center;
+        gap: 1.6rem;
+    }
+}
+
+.results-item {
+    font-size: 14px;
+    min-width: 250px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid $black;
+    padding: 0 1.2rem;
+    cursor: pointer;
+    transition: $transition-default;
+    &:hover {
+        background-color: $gray-01;
+    }
+    &-icon {
+        margin-right: 3.2rem;
+    }
+}

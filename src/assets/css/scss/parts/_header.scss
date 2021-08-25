@@ -1,0 +1,15 @@
+//----------------------
+// HEADER
+
+.header {
+    .brand {
+        margin: 0 auto;
+        padding: 4rem 0;
+        @include lg {
+            padding: 2rem 0;
+        }
+        @include lg {
+            padding: 1.6rem 0;
+        }
+    }
+}

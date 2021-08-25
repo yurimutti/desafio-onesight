@@ -1,0 +1,40 @@
+//----------------------
+//MODAL
+
+.modal {
+    position: fixed;
+    z-index: 1100;
+    display: none;
+    &-content {
+        width: 45vw;
+        background: $gray-02;
+        border: 3px solid $black;
+        padding: 3.2rem;
+        position: relative;
+        .modal-item {
+            margin-bottom: 1.6rem;
+            &-title {
+                font-size: 2rem;
+            }
+        }
+        @include md {
+            padding: 1.6rem;
+        }
+        @include sm {
+            width: 100%;
+        }
+    }
+    &.show {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .close-modal {
+        cursor: pointer;
+        position: absolute;
+        top: 16px;
+        right: 32px;
+        font-size: 2.4rem;
+        font-weight: bold;
+    }
+}

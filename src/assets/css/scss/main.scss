@@ -1,0 +1,22 @@
+//----------------------
+//MAIN STYLES
+
+//IMPORTS
+
+//BASE
+@import 'base/default';
+@import 'base/breakpoints';
+@import 'base/mixins';
+@import 'base/type';
+@import 'base/colors';
+@import 'base/variables';
+
+//PARTS
+
+@import 'parts/header';
+@import 'parts/main';
+@import 'parts/results';
+@import 'parts/search';
+@import 'parts/btn-menu';
+@import 'parts/modal';
+@import 'parts/overlay';

@@ -1,0 +1,11 @@
+{
+    "name": "frontend-daz",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "scss": "sass --watch src/assets/css/scss/:dist/assets/css"
+    },
+    "author": "",
+    "license": "ISC"
+}

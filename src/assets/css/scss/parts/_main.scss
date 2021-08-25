@@ -1,0 +1,12 @@
+//----------------------
+// MAIN
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    padding: 3.2rem 4rem;
+    position: relative;
+    .results-filter {
+        margin-right: 3.2rem;
+    }
+}
