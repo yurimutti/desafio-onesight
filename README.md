@@ -12,13 +12,13 @@
  <a href="#four_leaf_clover-tecnologias-utilizadas">Tecnologias utilizadas</a>
 
 <h2 align="center">
-  <img alt="Coffee" title="Coffee" src="./dist/assets/img/github/coffe-gif-mobile.gif" />
+  <img alt="Coffee" title="Coffee" src="./dist/assets/img/github/coffe-gif-web.gif" />
 </h2>
 
 <br />
 
 <h2 align="center">
-  <img alt="Coffee" title="Coffee" src="./dist/assets/img/github/coffe-gif-web.gif" />
+  <img alt="Coffee" title="Coffee" src="./dist/assets/img/github/coffe-gif-mobile.gif" />
 </h2>
 
 ## :four_leaf_clover: Tecnologias utilizadas
